@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(to right, #e0f2ff, #cceeff);
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.5em; /* Increased font size for heading */
+}
+
+main {
+  display: flex;
+  /* Removed flex-wrap as categories should not wrap */
+  justify-content: space-between; /* Align categories left and chatbot right */
+  width: 80%;
+  margin: 0 auto;
+}
+
+#chatbot-container {
+  width: 350px; /* Adjust width as needed */
+  position: fixed; /* Position chatbot at bottom right corner */
+  right: 20px; /* Adjust right margin for spacing */
+  bottom: 20px; /* Adjust bottom margin for spacing */
+  border: 1px solid #ccc;
+  padding: 10px; /* Optional padding */
+}
+
+.scheme-categories {  /* Changed class name for clarity */
+  width: 65%; /* Adjusted width to account for chatbot space */
+}
+
+.scheme-category {
+  width: 30%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style categories with different background colors */
+.scheme-category:nth-child(1) { /* First category (Agriculture) */
+  background-color: #f0ffe5; /* Light green */
+}
+
+.scheme-category:nth-child(2) { /* Second category (Education) */
+  background-color: #fff0f5; /* Light pink */
+}
+
+.scheme-category:nth-child(3) { /* Third category (Women & Children) */
+  background-color: #f5f9ff; /* Light blue */
+}
+
+.scheme-category h2 {
+  text-align: center;
+  padding: 15px 0; /* Adjust padding if needed */
+  font-size: 1.2em; /* Increased font size */
+}
+
+.scheme-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Add hover effect for links (optional) */
+a {
+  text-decoration: none;
+  color: #333; /* Darker gray for better contrast */
+}
+
+a:hover {
+  color: #007bff; /* Change color on hover */
+}
